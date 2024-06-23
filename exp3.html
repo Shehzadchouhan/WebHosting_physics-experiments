@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 3</title>
+    <link rel="stylesheet" href="exp3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Experiment 3: To find the diffraction using a laser beam and determine its grating element</h1>
+        <p>(All units must be in cm)</p>
+        <div class="input-group">
+            <label for="wavelength">Enter Wavelength λ (if it's in scientific notation use like 6.5e-5): </label>
+            <input type="text" id="wavelength" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="distance">Enter the distance between grating element and screen (D): </label>
+            <input type="text" id="distance" step="0.01">
+        </div>    <!--
+            Project: Physics Experiment Website
+            Author: tal
+            Website: shezad.com
+            -->
+        <div class="input-group">
+            <label for="numReadings">Enter the number of readings of corners (PP'): </label>
+            <input type="text" id="numReadings" min="1">
+        </div>
+        <div id="cornerInputs"></div>
+        <button id="generateButton" onclick="generateCornerInputs()">Generate Inputs</button>
+        <button onclick="calculateDiffraction()">Calculate Diffraction</button>
+        <div id="output"></div>
+    </div>
+    <div class="cpp">
+        <a class="verify-button" href="exp3_C++.html">Verify 🤔</a>
+    </div>
+
+    <script src="exp3.js"></script>
+</body>
+</html>

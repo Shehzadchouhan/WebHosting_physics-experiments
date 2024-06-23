@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4</title>
+    <link rel="stylesheet" href="exp4.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h2>Exp-4: To find Planck constant and work function by photoelectric effect</h2>
+            <p>(All units should be in SI)</p>
+            <label for="numReadings">Enter number of readings for wavelength, frequency, and potential gradient (n): </label>
+            <input type="number" id="numReadings" min="1"><br><br>
+
+            <div id="wavelengthInputs"></div>
+            <div id="frequencyInputs"></div>
+            <div id="gradientInputs"></div>
+
+            <button id="generateBtn" onclick="generateInputs()">Generate Inputs</button>
+            <button onclick="calculateResults()">Calculate Planck Constant(h) and work function(w)</button>
+
+            <div id="results"></div>
+        </div>
+    </div>
+v    <!--
+    Project: Physics Experiment Website
+    Author: tal
+    Website: shezad.com
+    -->
+    <script src="exp4.js"></script>
+</body>
+</html>

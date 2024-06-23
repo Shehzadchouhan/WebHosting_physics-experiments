@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 5 - Acceptance Angle Calculator</title>
+    <link rel="stylesheet" href="exp5.css">
+</head>
+<body>    <!--
+    Project: Physics Experiment Website
+    Author: tal
+    Website: shezad.com
+    -->
+    <div class="container">
+        <h1>Experiment 5 - To determine the Numerical Aperture of an optical fibre</h1>
+        <p>(All readings should be in cm)</p>
+        <form id="calculator-form" onsubmit="calculate(); return false;">
+            <div class="form-group">
+                <label for="distance">Distance (L in cm):</label>
+                <input type="text" id="distance" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="num-readings">Number of Diameter Readings (n):</label>
+                <input type="text" id="num-readings" min="1" required>
+            </div>
+            <div id="diameter-inputs"></div>
+            <button type="submit">Calculate Numerical Aperture (NA)</button>
+        </form>
+        <div id="results">
+            <p id="avg-diameter"></p>
+            <p id="theta"></p>
+            <p id="theta-deg"></p>
+            <p id="na"></p>
+        </div>
+    </div>
+    <script src="exp5.js"></script>
+</body>
+</html>

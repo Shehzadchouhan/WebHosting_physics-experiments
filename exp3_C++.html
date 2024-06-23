@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Experiments</title>
+    <link rel="stylesheet" href="exp3_cpp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Experiment No-3</h1>
+        <p>May be your answer not matched with this answer because of accuarate answer calculation for this we have a
+            creativity for you! </p>
+        <p>Here is a C++ code written with the same logic. This will help you to find your desired answer.</p>
+
+        <p>Copy this code and run it on a C++ compiler. For an online compiler,
+            <a href="https://www.programiz.com/cpp-programming/online-compiler/" target="_blank">click here</a>.
+        </p>
+        <div class="code-block">
+            <h2>Example C++ Code</h2>
+            <pre><code class="cpp">
+#include &lt;iostream>
+#include &lt;vector>
+#include &lt;cmath> // Include cmath for atan and sin
+
+using namespace std;
+
+// Function prototypes
+void printWelcomeMessage();
+void printFinalMessage();
+void corners();
+void displayRadians();
+void slits();
+
+// Global variables
+float L, D;
+vector&lt;float> y; // Global vector to store y values
+double rad1, rad2, rad3; // Global variables to store arctangent values
+int n; // General number of orders
+vector&lt;double> d; // Slits
+
+// Function definitions
+void printWelcomeMessage()
+{
+    cout << "******************************************************" << endl;
+    cout << "*                                                    *" << endl;
+    cout << "*          Welcome to the Physics Experiments        *" << endl;
+    cout << "*                Practical File Program              *" << endl;
+    cout << "*                                                    *" << endl;
+    cout << "******************************************************" << endl;
+    cout << endl;
+}
+
+void printFinalMessage()
+{
+    cout << endl;
+    cout << "******************************************************" << endl;
+    cout << "*                                                    *" << endl;
+    cout << "*          Thank you for using the Physics           *" << endl;
+    cout << "*                Experiments Program!                *" << endl;
+    cout << "*                                                    *" << endl;
+    cout << "******************************************************" << endl;
+    cout << endl;
+    cout << "We hope you found these simulations insightful and educational." << endl;
+    cout << "Your feedback is valuable to us. Please let us know your thoughts and suggestions." << endl;
+    cout << "Thank you!" << endl;
+}
+
+void corners()
+{
+    cout << "Enter number of readings of corners (PP'): ";
+    cin >> n;
+
+    vector&lt;float> P(n); // Vector to store P values
+    for (int i = 0; i < n; i++)
+    { 
+        cout << "Enter distance between corners P" << i + 1 << "P" << i + 1 << "' : ";
+        cin >> P[i];
+    }
+
+    cout << "Enter the maxima distance from screen (y=PP'/2):" << endl;
+    y.resize(n); // Resize y vector to match the size of P
+    for (int i = 0; i < n; i++)
+    {
+        y[i] = P[i] / 2;
+        cout << "y" << i + 1 << ": " << y[i] << endl;
+    }
+
+    // Calculate arctangent for the first three values
+    if (n > 0)
+        rad1 = atan(y[0] / D) * (180.0 / M_PI);
+    if (n > 1)
+        rad2 = atan(y[1] / D) * (180.0 / M_PI);
+    if (n > 2)
+        rad3 = atan(y[2] / D) * (180.0 / M_PI);
+}
+
+void displayRadians()
+{
+    // Function to display global rad values
+    cout << "\n\nAngle of diffraction in degrees (theta):" << endl;
+    // Truncate the numbers to two decimal places
+    int decimalPlaces = 2; // The number of decimal places to keep
+    double scale = pow(10.0, decimalPlaces);
+
+    // Truncate rad1 to two decimal places
+    rad1 = floor(rad1 * scale) / scale;
+
+    // Truncate rad2 to two decimal places
+    rad2 = floor(rad2 * scale) / scale;
+
+    // Truncate rad3 to two decimal places
+    rad3 = floor(rad3 * scale) / scale;
+
+    cout << "rad1: " << rad1 << endl;
+    cout << "rad2: " << rad2 << endl;
+    cout << "rad3: " << rad3 << endl;
+}
+
+void slits()
+{
+    cout << "\nGrating element (d):" << endl;
+    d.resize(3); // Resize d vector to store 3 values
+
+    // Convert degrees to radians
+    double rad1_in_radians = rad1 * (M_PI / 180.0);
+    double rad2_in_radians = rad2 * (M_PI / 180.0);
+    double rad3_in_radians = rad3 * (M_PI / 180.0);
+
+    // Calculate sin(rad1), sin(rad2), sin(rad3)
+    double sin_rad1 = sin(rad1_in_radians);
+    double sin_rad2 = sin(rad2_in_radians);
+    double sin_rad3 = sin(rad3_in_radians);
+
+    int decimalPlaces = 2; // The number of decimal places to keep
+    double scale = pow(10.0, decimalPlaces);
+
+    // Truncate sin(rad1), sin(rad2), sin(rad3) to two decimal places
+    sin_rad1 = floor(sin_rad1 * scale) / scale;
+    sin_rad2 = floor(sin_rad2 * scale) / scale;
+    sin_rad3 = floor(sin_rad3 * scale) / scale;
+
+    // Calculate slit values for rad1, rad2, and rad3
+    if (n >= 1)
+        d[0] = n * L / sin_rad1;
+    if (n >= 2)
+        d[1] = n * L / sin_rad2;
+    if (n >= 3)
+        d[2] = n * L / sin_rad3;
+
+    // Display slit values
+    if (n > 0)
+        cout << "d1: " << d[0] << endl;
+    if (n > 1)
+        cout << "d2: " << d[1] << endl;
+    if (n > 2)
+        cout << "d3: " << d[2] << endl;
+}
+
+int main()
+{
+    printWelcomeMessage();
+
+    cout << "&lt;--- Exp-3 To find the diffraction using laser beam and determine its grating element --->" << endl;
+    cout << "(All units must be in cm)" << endl;
+    cout << "Enter Wavelength (L): ";
+    cin >> L;
+    cout << "Enter the distance between grating element and screen (D): ";
+    cin >> D;
+
+    corners();        // Initialize and calculate y values
+    displayRadians(); // Display arctangent values
+
+    slits(); // Calculate and display slit values
+
+    printFinalMessage();
+
+    return 0;
+}
+             </code></pre>
+
+            <script src="script.js"></script>
+</body>
+
+</html>    <!--
+    Project: Physics Experiment Website
+    Author: tal
+    Website: shezad.com
+    -->

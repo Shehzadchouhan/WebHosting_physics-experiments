@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="exp2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Experiment 2: To find the dielectric constant of a solid sample</h1>
+        <p>(All units must be in SI)</p>
+        <div class="input-group">
+            <label for="cs">Enter standard capacitor Cs (if its in scientific notation, e.g., 50e-12): </label>
+            <input type="text" id="cs" step="1e-12">
+        </div>
+        <div class="input-group">
+            <label for="LCG">Enter least count of screw gauge (LCG): </label>
+            <input type="text" id="LCG" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="LCV">Enter least count of vernier caliper (LCV): </label>
+            <input type="text" id="LCV" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="Vs">Enter standard voltage capacitor (Vs): </label>
+            <input type="text" id="Vs" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="Vd">Enter dielectric voltage (Vd): </label>
+            <input type="text" id="Vd" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="n">Enter the number of readings for diameter (D) and thickness (d): </label>
+            <input type="text" id="n" min="1">
+        </div>    <!--
+            Project: Physics Experiment Website
+            Author: tal
+            Website: shezad.com
+            -->
+        <div class="input-group">
+            <label for="unit">Choose your units (meters /centimeters): </label>
+            <select id="unit">
+                <option value="m">meters</option>
+                <option value="c">centimeters</option>
+            </select>
+        </div>
+        <div id="diameterInputs"></div>
+        <div id="thicknessInputs"></div>
+        <button onclick="generateInputs()">Generate Inputs</button>
+        <button onclick="calculateDielectricConstant()">Calculate Dielectric Constant</button>
+        <div id="output"></div>
+    </div>
+    <script src="exp2.js"></script>
+</body>
+</html>

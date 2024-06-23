@@ -1,0 +1,103 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: url('exp4_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.header, .footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #007bff;
+    font-family: 'Georgia', serif;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 22px;
+    font-family: 'Georgia', serif;
+    color: #14418c;
+}
+
+p {
+    color: #40a3eb;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    color: #3b3c3c;
+    margin-top: 42px;
+    padding-top: 37px;
+    font-family: math;
+}
+
+input[type="number"], input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 2px 15px 17px 2px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 16px;
+}

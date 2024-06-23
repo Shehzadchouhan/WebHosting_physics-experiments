@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="exp1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Experiment 1: Measure the Divergence of the Laser Beam</h1>
+        <p>(All readings should be in cm)</p>
+        <div class="input-group">
+            <label for="D">Enter your Displacement D (distance from laser beam to graph paper): </label>
+            <input type="text" id="D" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="w1">Spot size (w1): </label>
+            <input type="text" id="w1" step="0.01">
+        </div>
+        <div class="input-group">
+            <label for="w2">Spot size (w2): </label>
+            <input type="text" id="w2" step="0.01">
+        </div><!--
+            Project: Physics Experiment Website
+            Author: tal
+            Website: shezad.com
+            --> 
+        <div class="input-group">
+            <label for="w3">Spot size (w3): </label>
+            <input type="text" id="w3" step="0.01">
+        </div>
+        <button onclick="calculateDivergence()">Calculate Divergence</button>
+        <div id="output"></div>
+    </div>
+    <script src="exp1.js"></script>
+</body>
+</html>

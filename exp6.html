@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 6: Attenuation and Propagation Losses in Optical Fibre</title>
+    <link rel="stylesheet" href="exp6.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Experiment 6: Determine the Attenuation and Propagation Losses in Optical Fibre</h2>
+        <p>(All units in SI)</p>
+
+        <div class="form-group">
+            <label for="length">Enter the length of an optical fibre L (L2 - L1) in km (e.g., 10^3 => 1e3):</label>
+            <input type="text" id="length" step="0.01" required>
+        </div>
+
+        <h3>Voltage Readings</h3>
+        <div class="form-group">
+            <label for="voltage1">Enter the voltage of fibre length at L1 in volts:</label>
+            <input type="text" id="voltage1" step="0.01" required>
+        </div>
+
+        <div class="form-group">
+            <label for="voltage2">Enter the voltage of fibre length at L2 in volts:</label>
+            <input type="text" id="voltage2" step="0.01" required>
+        </div>
+
+        <button onclick="calculate()">Calculate Losses</button>
+
+        <div id="results">
+            <p id="fibre-loss"></p>
+            <p id="attenuation-loss"></p>
+        </div>
+    </div>    <!--
+        Project: Physics Experiment Website
+        Author: tal
+        Website: shezad.com
+        -->
+
+    <script src="exp6.js"></script>
+</body>
+</html>

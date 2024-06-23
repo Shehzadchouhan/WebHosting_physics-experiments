@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://th.bing.com/th/id/OIP.QEA9xd5iHAmUL_jB4oNIqQHaFD?w=600&h=409&rs=1&pid=ImgDetMain') no-repeat center center fixed;
+    background-size: cover;
+    color: #33ff33; /* Neon green color for text */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.85); /* Darker background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 800px; /* Increased width */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Green glow */
+}  /*
+Project: Physics Experiment Website
+Author: tal
+Website: shezad.com
+*/
+
+h1, h2 {
+    color: #33ff33; /* Neon green color */
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #e6e6e6;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #00ff00; /* Green color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.code-block {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #e6e6e6;
+    font-family: 'Source Code Pro', monospace; /* Monospace font */
+}
+
+pre {
+    overflow-x: auto;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #00ff00; /* Green color for code */
+}
+
+button.run-code {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff00; /* Green background */
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+button.run-code:hover {
+    background-color: #33ff33; /* Lighter green on hover */
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .code-block {
+        padding: 15px;
+    }
+
+    pre {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .code-block {
+        padding: 10px;
+    }
+
+    pre {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Experiment - Velocity of Ultrasonic Wave</title>
+    <link rel="stylesheet" href="exp8.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Experiment 8:To find the velocity of ultrasonic wave in a given liquid using ultrasonic interferrometer
+        </h1>
+        <p>(All readings should be in mm)</p>
+        <form id="experimentForm">
+            <label for="x1">Value of x1 (first reading) in mm:</label>
+            <input type="text" id="x1" name="x1" step="any" required>
+    <!--
+    Project: Physics Experiment Website
+    Author: tal
+    Website: shezad.com
+    -->
+            <label for="x11">Value of x11 (last reading) in mm:</label>
+            <input type="text" id="x11" name="x11" step="any" required>
+
+            <label for="f">Frequency of Ultrasonic Wave (f) in Hz:</label>
+            <input type="text" id="f" name="f" step="any" required>
+
+            <button type="submit">Calculate velocity</button>
+        </form>
+        <ul>
+            <div id="output" class="output">
+                <!-- <h3>Calculation velocity</h3> -->
+                <li>
+                    <p id="l"></p>
+                </li>
+                <li>
+                    <p id="wavelength"></p>
+                </li>
+                <li>
+                    <p id="velocity"></p>
+                </li>
+            </div>
+        </ul>
+
+    </div>
+
+    <script src="exp8.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 7 - Hysteresis Loop</title>
+    <link rel="stylesheet" href="exp7.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2>Experiment-7: To study Hysteresis loop for given ferromagnetic material on a CRO using solenoid</h2>
+        <p>(All readings should be in mm)</p>
+
+        <label for="diameter">Diameter of sample:</label>
+        <input type="text" id="diameter" step="any"><br>
+
+        <label for="length">Length of sample (l):</label>
+        <input type="text" id="length" step="any"><br>
+
+        <label for="As">As:</label>
+        <input type="text" id="As" step="any"><br>
+
+        <label for="Ac">Ac:</label>
+        <input type="text" id="Ac" step="any"><br>
+
+        <label for="demagFactor">Demagnetization factor (N):</label>
+        <input type="text" id="demagFactor" step="any"><br>
+
+        <label for="coilDiameter">Diameter of pick up coil:</label>
+        <input type="text" id="coilDiameter" step="any"><br>
+
+        <label for="gx">gx:</label>
+        <input type="text" id="gx" step="any"><br>
+
+        <label for="gy">gy:</label>
+        <input type="text" id="gy" step="any"><br>
+
+        <label for="Go">Go:</label>
+        <input type="text" id="Go" step="any"><br>
+
+        <label for="Uo">Uo:</label>
+        <input type="text" id="Uo" step="any"><br>
+
+        <p>For which iron do you want to find coercivity (Hc), retentivity (R), and saturation magnetization (S)?</p>
+        <label for="softIron">Soft Iron</label>
+        <input type="radio" id="softIron" name="ironType" value="softIron"> <br>
+        <label for="hardIron">Hard Iron</label>
+        <input type="radio" id="hardIron" name="ironType" value="hardIron"> <br>
+
+        <div id="softIronInputs" style="display:none;">
+            <label for="loop_width">Loop Width:</label>
+            <input type="text" id="loop_width" step="any"><br>
+
+            <label for="intercept">Intercept:</label>
+            <input type="text" id="intercept" step="any"><br>
+
+            <label for="tip_height">Tip Height:</label>
+            <input type="text" id="tip_height" step="any"><br>
+        </div>
+
+        <div id="hardIronInputs" style="display:none;">
+            <label for="loop_width2">Loop Width:</label>
+            <input type="text" id="loop_width2" step="any"><br>
+
+            <label for="intercept2">Intercept:</label>
+            <input type="text" id="intercept2" step="any"><br>
+
+            <label for="tip_height2">Tip Height:</label>
+            <input type="text" id="tip_height2" step="any"><br>
+        </div>    <!--
+            Project: Physics Experiment Website
+            Author: tal
+            Website: shezad.com
+            -->
+
+        <button type="button" id="calculateButton">Calculate</button>
+
+        <div class="output">
+            <p id="areaRatio"></p>
+            <p id="Hc"></p>
+            <p id="R"></p>
+            <p id="S"></p>
+        </div>
+    </div>
+    <script src="exp7.js"></script>
+</body>
+</html>

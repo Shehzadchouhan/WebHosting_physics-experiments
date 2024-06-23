@@ -1,0 +1,165 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #26a4d2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    background-image: url('exp_6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  /*
+Project: Physics Experiment Website
+Author: tal
+Website: shezad.com
+*/
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    width: 95%; /* Adjusted width */
+    max-width: 800px; /* Adjusted max-width */
+    box-sizing: border-box;
+    text-align: center;
+    height: auto; /* Adjusted height to auto */
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    color: #e6eaed;
+    font-size: 28px;
+}
+
+h3 {
+    color: #e6eaed;
+    font-size: 22px;
+}
+
+p {
+    margin: 10px 0;
+    color: #e6eaed;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    color: #070707;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #26a4d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #59b4d6;
+    transform: scale(1.1);
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#results p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+h1, h2 {
+    color: #e6eaed;
+    font-size: 28px;
+}
+
+h3 {
+    color: #e6eaed;
+    font-size: 22px;
+}
+
+p {
+    margin: 10px 0;
+    color: #e6eaed;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    color: #070707;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #26a4d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #59b4d6;
+    transform: scale(1.1);
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#results p {
+    font-weight: bold;
+    font-size: 20px;
+}
