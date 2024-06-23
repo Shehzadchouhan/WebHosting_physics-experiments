@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Experiments</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('title.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: rgba(132, 130, 130, 0.8);
+            width: 80%;
+            max-width: 656px;
+            color: #fcf3f3;
+            padding: 20px;
+            border-radius: 31px;
+            margin-bottom: 20px;
+        }
+
+        .index a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .index a:hover {
+            background-color: #45a049;
+        }
+
+        .about-logo {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .about-logo img {
+            width: 87%;
+            height: 79%;
+            border-radius: 50%;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .about-logo:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .social-logos {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .social-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .social-logo img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-logo img:hover {
+            transform: scale(1.1);
+        }
+
+        .social-logo:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 24px;
+                padding: 15px;
+            }
+
+            .index a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            .tooltip {
+                width: 250px;
+                top: 70px;
+                font-size: 14px;
+            }
+
+            .social-logo img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .index a {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+
+            .tooltip {
+                width: 200px;
+                top: 60px;
+                font-size: 12px;
+            }
+
+            .social-logo img {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 30px;
+                height: 30px;
+            }
+            .social-logo  {
+                font-size: 12px;
+               font-family:Georgia, 'Times New Roman', Times, serif;
+               opacity: 85%;
+          color: whitesmoke;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Welcome to Physics Experiments</h1>
+        </div>
+        <div class="index">
+            <a href="lists.html">Go to Experiments</a>
+        </div>
+    </div>
+    <div class="about-logo">
+        <img src="title_1.jpeg" alt="Logo"> ABOUT
+        <div class="tooltip">
+            Welcome to our Physics Experiments website. This platform is designed to simplify the process of performing calculations for your physics lab experiments. By providing intuitive tools and resources, we aim to save your time and enhance your learning experience. Our goal is to foster enthusiasm for exploring and understanding physics through the integration of technology. Join us in making physics both accessible and exciting.
+        </div>
+    </div>    <!--
+        Project: Physics Experiment Website
+        Author: tal
+        Website: shezad.com
+        -->
+    <div class="social-logos">
+        <a href="https://www.linkedin.com/public-profile/settings" target="_blank" class="social-logo">
+            <img src="title_2.png" alt="LinkedIn Logo">
+            LinkedIn
+        </a>
+        <a href="https://github.com/Shehzadchouhan" target="_blank" class="social-logo">
+            <img src="title_3.png" alt="GitHub Logo">
+            GitHub
+        </a>
+        <a href="https://www.instagram.com/shehzad_91880?igsh=NGdrY3d6dXA2aDJs" target="_blank" class="social-logo">
+            <img src="title_4.png" alt="Instagram Logo">
+            Instagram
+        </a>
+    </div>
+</body>
+
+</html>

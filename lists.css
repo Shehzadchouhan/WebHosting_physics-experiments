@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-image: url('https://c1.wallpaperflare.com/preview/941/647/592/background-line-horizontal-stripes-design-thumbnail.jpg');
+    font-family: Arial, sans-serif;
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  /*
+    Project: Physics Experiment Website
+    Author: tal
+    Website: shezad.com
+   */
+img {
+    filter: invert(1);
+}
+
+.container {
+    color: white;
+    background-color: #010101;
+    padding: 20px 23px;
+    margin: 20px 23px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(4, 2, 2, 0.1);
+    width: 80%;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-logo, .right-logo {
+    width: 361px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f1f1;
+    margin-bottom: -25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 71px;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.serial {
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #eae7e7;
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.name {
+    flex: 8;
+    color: #f8f7f7;
+}
+
+.view-button {
+    color: #e2e9ef;
+    border: 2px solid #6b2222;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    background: none;
+    font-weight: bold;
+}
+
+.view-button::after {
+    content: ' ➔';
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.view-button:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-color: #ff0000;
+}
+
+.view-button:hover::after {
+    margin-left: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .left-logo, .right-logo {
+        width: 100px;
+    }
+    
+    h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    
+    .serial {
+        width: 20px;
+    }
+    
+    .name {
+        font-size: 14px;
+    }
+    
+    .view-button {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logos {
+        flex-direction: column;
+    }
+    
+    .left-logo, .right-logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .serial {
+        width: 20px;
+        font-size: 12px;
+    }
+    
+    .name {
+        font-size: 12px;
+    }
+    
+    .view-button {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
