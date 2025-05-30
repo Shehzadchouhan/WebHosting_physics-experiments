@@ -6,6 +6,17 @@ A simple web-based project showcasing various physics experiments designed for s
 
 👉 [Click here to visit the live site](https://shehzadchouhan.github.io/WebHosting_physics-experiments/)
 
+---
+
+##Screenshots-
+#### Home Page and About Page
+![Home Page](./1.png)
+#### project page
+![Home Page](./assets/proj.png)
+#### resume page
+![Home Page](./assets/resume.png)
+#### List of projects
+![Home Page](./assets/lp.png)
 ## 📚 Description
 
 This project helps students understand core physics experiments by providing an intuitive and interactive interface to simulate and explore real-world concepts.
