@@ -4,7 +4,7 @@ A simple web-based project showcasing various physics experiments designed for s
 
 ## 🔗 Live Demo
 
-👉 [Click here to visit the live site](https://shehzadchouhan.github.io/WebHosting_physics-experiments/)
+👉 [Click here to visit the live site](https://physicspractical.netlify.app/)
 
 ---
 
