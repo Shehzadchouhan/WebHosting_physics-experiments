@@ -9,19 +9,20 @@ A simple web-based project showcasing various physics experiments designed for s
 ---
 
 ##Screenshots-
+#### home page
+![Home Page](./3.png)
+#### index page
+![Home Page](./4.png)
+#### experiment page
+![Home Page](./5.png)
+#### result page
+![Home Page](./2.png)
 #### verify Page 
 ![Home Page](./1.png)
-#### project page
-![Home Page](./2.png)
-#### resume page
-![Home Page](./3.png)
-#### List of projects
-![Home Page](./4.png)
-#### List of projects
-![Home Page](./5.png)
-## 📚 Description
+
 
 ---
+## 📚 Description
 This project helps students understand core physics experiments by providing an intuitive and interactive interface to simulate and explore real-world concepts.
 
 ## 📌 Features
